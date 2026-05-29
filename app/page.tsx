@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Navbar from '@/components/Navbar';
+import Hero from '@/components/Hero';
 import type { Language } from '@/lib/types';
 
 export default function Home() {
@@ -11,7 +12,7 @@ export default function Home() {
     <>
       <Navbar lang={lang} onToggleLang={() => setLang((l) => l === 'pt' ? 'en' : 'pt')} />
       <main className="min-h-screen pt-16 text-slate-100">
-        {/* seções serão adicionadas aqui */}
+        <Hero lang={lang} />
       </main>
     </>
   );

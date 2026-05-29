@@ -14,13 +14,15 @@ const content = {
 
     hero: {
       greeting:  'Olá, eu sou',
-      name:      'Ana Reis',
+      name:      'Ana Luísa Reis Nascente',
       title:     'Engenheira de Software',
       subtitle:  'Estudante de Engenharia de Computação na UnB, apaixonada por desenvolvimento full-stack e educação em tecnologia.',
       cta: {
-        primary:   'Ver Projetos',
-        secondary: 'Entrar em Contato',
+        projects: 'Ver Projetos',
+        cv:       'Baixar CV',
+        contact:  'Contato',
       },
+      scroll: 'role para baixo',
     },
 
     about: {
@@ -159,13 +161,15 @@ const content = {
 
     hero: {
       greeting:  "Hi, I'm",
-      name:      'Ana Reis',
+      name:      'Ana Luísa Reis Nascente',
       title:     'Software Engineer',
       subtitle:  'Computer Engineering student at UnB, passionate about full-stack development and tech education.',
       cta: {
-        primary:   'View Projects',
-        secondary: 'Get in Touch',
+        projects: 'View Projects',
+        cv:       'Download CV',
+        contact:  'Contact',
       },
+      scroll: 'scroll down',
     },
 
     about: {
