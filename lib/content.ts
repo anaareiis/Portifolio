@@ -46,14 +46,14 @@ const content = {
 
     skills: {
       sectionTitle: 'Habilidades',
-      primary: {
-        title: 'Principais',
-        items: ['React', 'Next.js', 'TypeScript', 'Node.js', 'Python', 'PostgreSQL'],
-      },
-      secondary: {
-        title: 'Também trabalho com',
-        items: ['Docker', 'Git', 'Tailwind CSS', 'Prisma', 'REST APIs', 'Linux'],
-      },
+      primaryTitle: 'Principais',
+      otherTitle: 'Outras tecnologias',
+      primary: ['JavaScript', 'React JS / React Native', 'Node.js', 'Python'],
+      other: [
+        'Ruby', 'C', 'C++', 'Java', 'Git & GitHub', 'SQL',
+        'HTML', 'CSS', 'Figma', 'LaTeX', 'TDD (GTest, Valgrind)',
+        'Metodologias Ágeis', 'Linux', 'Power BI', 'Microsoft Office',
+      ],
     },
 
     experience: {
@@ -198,14 +198,14 @@ const content = {
 
     skills: {
       sectionTitle: 'Skills',
-      primary: {
-        title: 'Core',
-        items: ['React', 'Next.js', 'TypeScript', 'Node.js', 'Python', 'PostgreSQL'],
-      },
-      secondary: {
-        title: 'Also work with',
-        items: ['Docker', 'Git', 'Tailwind CSS', 'Prisma', 'REST APIs', 'Linux'],
-      },
+      primaryTitle: 'Core',
+      otherTitle: 'Other technologies',
+      primary: ['JavaScript', 'React JS / React Native', 'Node.js', 'Python'],
+      other: [
+        'Ruby', 'C', 'C++', 'Java', 'Git & GitHub', 'SQL',
+        'HTML', 'CSS', 'Figma', 'LaTeX', 'TDD (GTest, Valgrind)',
+        'Agile Methodologies', 'Linux', 'Power BI', 'Microsoft Office',
+      ],
     },
 
     experience: {

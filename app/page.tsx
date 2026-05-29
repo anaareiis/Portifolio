@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
 import About from '@/components/About';
+import Skills from '@/components/Skills';
 import type { Language } from '@/lib/types';
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
       <main className="min-h-screen pt-16 text-slate-100">
         <Hero lang={lang} />
         <About lang={lang} />
+        <Skills lang={lang} />
       </main>
     </>
   );
