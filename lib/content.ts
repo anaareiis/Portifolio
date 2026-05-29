@@ -31,12 +31,17 @@ const content = {
         'Sou estudante de Engenharia de Computação na Universidade de Brasília (UnB), atualmente no 7º semestre com previsão de conclusão em 2027. Tenho experiência em desenvolvimento full-stack, com foco em aplicações web modernas.',
         'Além do desenvolvimento, tenho paixão por ensino e compartilhamento de conhecimento. Atuei como professora e monitora, contribuindo para a formação de outros estudantes em programação e tecnologia.',
       ],
-      details: {
-        location: 'Brasília, DF — Brasil',
-        languages: 'Português (nativo) · Inglês (avançado)',
-        education: 'Eng. Computação — UnB (2027)',
-        availability: 'Disponível para oportunidades',
-      },
+      infoCards: [
+        { label: 'Localização', value: 'Brasília, DF — Brasil' },
+        { label: 'Universidade', value: 'UnB' },
+        { label: 'Formatura', value: '2027' },
+      ],
+      languages: [
+        { name: 'Português', level: 'Nativo' },
+        { name: 'Inglês',    level: 'Fluente (C1)' },
+        { name: 'Espanhol',  level: 'Básico (A2)' },
+        { name: 'Francês',   level: 'Básico (A2)' },
+      ],
     },
 
     skills: {
@@ -178,12 +183,17 @@ const content = {
         "I'm a Computer Engineering student at the University of Brasília (UnB), currently in my 7th semester with an expected graduation in 2027. I have experience in full-stack development, focused on modern web applications.",
         'Beyond development, I have a passion for teaching and knowledge sharing. I have worked as a teacher and teaching assistant, contributing to the education of other students in programming and technology.',
       ],
-      details: {
-        location:     'Brasília, DF — Brazil',
-        languages:    'Portuguese (native) · English (advanced)',
-        education:    'Computer Eng. — UnB (2027)',
-        availability: 'Open to opportunities',
-      },
+      infoCards: [
+        { label: 'Location',    value: 'Brasília, DF — Brazil' },
+        { label: 'University',  value: 'UnB' },
+        { label: 'Graduation',  value: '2027' },
+      ],
+      languages: [
+        { name: 'Portuguese', level: 'Native' },
+        { name: 'English',    level: 'Fluent (C1)' },
+        { name: 'Spanish',    level: 'Basic (A2)' },
+        { name: 'French',     level: 'Basic (A2)' },
+      ],
     },
 
     skills: {
