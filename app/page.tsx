@@ -1,27 +1,8 @@
-'use client';
+import PortfolioClient from '@/components/PortfolioClient';
+import { getGitHubRepos } from '@/lib/github';
 
-import { useState } from 'react';
-import Navbar from '@/components/Navbar';
-import Hero from '@/components/Hero';
-import About from '@/components/About';
-import Skills from '@/components/Skills';
-import Experience from '@/components/Experience';
-import Education from '@/components/Education';
-import type { Language } from '@/lib/types';
+export default async function Home() {
+  const repos = await getGitHubRepos();
 
-export default function Home() {
-  const [lang, setLang] = useState<Language>('pt');
-
-  return (
-    <>
-      <Navbar lang={lang} onToggleLang={() => setLang((l) => l === 'pt' ? 'en' : 'pt')} />
-      <main className="min-h-screen pt-16 text-slate-100">
-        <Hero lang={lang} />
-        <About lang={lang} />
-        <Skills lang={lang} />
-        <Experience lang={lang} />
-        <Education lang={lang} />
-      </main>
-    </>
-  );
+  return <PortfolioClient repos={repos} />;
 }

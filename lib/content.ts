@@ -132,6 +132,8 @@ const content = {
       viewDemo:     'Ver demo',
       loadMore:     'Ver mais projetos no GitHub',
       noDescription: 'Sem descrição',
+      emptyState:   'Não foi possível carregar os projetos agora.',
+      emptyCta:     'Ver perfil no GitHub',
     },
 
     contact: {
@@ -293,6 +295,8 @@ const content = {
       viewDemo:     'View demo',
       loadMore:     'See more projects on GitHub',
       noDescription: 'No description',
+      emptyState:   'Could not load projects right now.',
+      emptyCta:     'View GitHub profile',
     },
 
     contact: {
