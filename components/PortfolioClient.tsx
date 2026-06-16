@@ -8,6 +8,7 @@ import Skills from '@/components/Skills';
 import Experience from '@/components/Experience';
 import Education from '@/components/Education';
 import Projects from '@/components/Projects';
+import Contact from '@/components/Contact';
 import type { Language, GitHubRepo } from '@/lib/types';
 
 interface PortfolioClientProps {
@@ -27,6 +28,7 @@ export default function PortfolioClient({ repos }: PortfolioClientProps) {
         <Experience lang={lang} />
         <Education lang={lang} />
         <Projects lang={lang} repos={repos} />
+        <Contact lang={lang} />
       </main>
     </>
   );

@@ -138,7 +138,7 @@ const content = {
 
     contact: {
       sectionTitle: 'Contato',
-      subtitle:     'Vamos conversar? Entre em contato por qualquer um dos canais abaixo.',
+      subtitle:     'Disponível para oportunidades. Vamos conversar? Entre em contato por qualquer um dos canais abaixo.',
       form: {
         name:        'Nome',
         email:       'E-mail',
@@ -149,12 +149,12 @@ const content = {
         submit:      'Enviar Mensagem',
         sending:     'Enviando...',
         success:     'Mensagem enviada com sucesso!',
-        error:       'Erro ao enviar. Tente novamente.',
+        error:       'Preencha todos os campos para continuar.',
       },
       links: {
-        email:    'samurth00@gmail.com',
+        email:    'anarnascente@gmail.com',
         github:   'github.com/anaareiis',
-        linkedin: 'linkedin.com/in/anaareiis',
+        location: 'Brasília, DF — Brasil',
       },
     },
 
@@ -301,7 +301,7 @@ const content = {
 
     contact: {
       sectionTitle: 'Contact',
-      subtitle:     "Let's talk! Reach out through any of the channels below.",
+      subtitle:     "Open to opportunities. Let's talk! Reach out through any of the channels below.",
       form: {
         name:        'Name',
         email:       'Email',
@@ -312,12 +312,12 @@ const content = {
         submit:      'Send Message',
         sending:     'Sending...',
         success:     'Message sent successfully!',
-        error:       'Failed to send. Please try again.',
+        error:       'Please fill in all fields to continue.',
       },
       links: {
-        email:    'samurth00@gmail.com',
+        email:    'anarnascente@gmail.com',
         github:   'github.com/anaareiis',
-        linkedin: 'linkedin.com/in/anaareiis',
+        location: 'Brasília, DF — Brazil',
       },
     },
 
