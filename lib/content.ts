@@ -58,18 +58,21 @@ const content = {
 
     experience: {
       sectionTitle: 'Experiência',
+      present: 'Presente',
       items: [
         {
-          role:        'Professora de Programação',
-          company:     'Curso Particular',
-          period:      '2023 — presente',
-          description: 'Aulas particulares de lógica de programação, Python e JavaScript para estudantes do ensino médio e universitários. Desenvolvimento de material didático personalizado e acompanhamento de projetos dos alunos.',
+          role:        'Professora Particular – Física & Matemática',
+          company:     'Porto Apoio Individual',
+          period:      'Mar 2023 — Presente',
+          current:     true,
+          description: 'Suporte acadêmico e tutoria para alunos do ensino médio e universitários em Física e Matemática. Planejamento de aulas personalizadas e acompanhamento individualizado do aprendizado.',
         },
         {
-          role:        'Monitora de Disciplina',
-          company:     'Universidade de Brasília (UnB)',
-          period:      '2024',
-          description: 'Monitoria em disciplina da graduação, auxiliando professores e estudantes com dúvidas, correção de exercícios e preparação de material de apoio.',
+          role:        'Estagiária de Docência – Ensino Fundamental e Médio',
+          company:     'Colégio Santo Antônio',
+          period:      '2022 — 2023',
+          current:     false,
+          description: 'Planejamento de aulas, tutoria de alunos e desenvolvimento de habilidades de comunicação e didática no ambiente escolar.',
         },
       ],
     },
@@ -210,18 +213,21 @@ const content = {
 
     experience: {
       sectionTitle: 'Experience',
+      present: 'Present',
       items: [
         {
-          role:        'Programming Teacher',
-          company:     'Private Tutoring',
-          period:      '2023 — present',
-          description: 'Private lessons in programming logic, Python and JavaScript for high school and university students. Development of personalized teaching materials and student project mentoring.',
+          role:        'Private Tutor – Physics & Mathematics',
+          company:     'Porto Apoio Individual',
+          period:      'Mar 2023 — Present',
+          current:     true,
+          description: 'Academic support and tutoring for high school and university students in Physics and Mathematics. Personalized lesson planning and individualized learning support.',
         },
         {
-          role:        'Teaching Assistant',
-          company:     'University of Brasília (UnB)',
-          period:      '2024',
-          description: 'Teaching assistant for an undergraduate course, helping professors and students with questions, grading exercises, and preparing support materials.',
+          role:        'Teaching Intern – Primary and Secondary Education',
+          company:     'Colégio Santo Antônio',
+          period:      '2022 — 2023',
+          current:     false,
+          description: 'Lesson planning, student tutoring, and development of communication and teaching skills in a school environment.',
         },
       ],
     },
