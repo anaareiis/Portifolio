@@ -6,6 +6,7 @@ import Hero from '@/components/Hero';
 import About from '@/components/About';
 import Skills from '@/components/Skills';
 import Experience from '@/components/Experience';
+import Education from '@/components/Education';
 import type { Language } from '@/lib/types';
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
         <About lang={lang} />
         <Skills lang={lang} />
         <Experience lang={lang} />
+        <Education lang={lang} />
       </main>
     </>
   );

@@ -79,43 +79,49 @@ const content = {
 
     education: {
       sectionTitle: 'Educação',
+      present: 'Presente',
       items: [
         {
-          degree:      'Engenharia de Computação',
+          degree:      'Bacharelado em Engenharia de Computação',
           institution: 'Universidade de Brasília — UnB',
-          period:      '2022 — 2027',
-          description: '7º semestre. Foco em sistemas de software, algoritmos e infraestrutura.',
+          period:      'Mar 2023 — Presente (prev. 2027)',
+          current:     true,
+          description: 'Foco em sistemas de software, algoritmos, estruturas de dados e infraestrutura. 7º semestre.',
         },
         {
-          degree:      'Formação Full Stack',
+          degree:      'Discovery Course',
           institution: 'Rocketseat',
           period:      '2023',
-          description: 'Trilha de desenvolvimento web com React, Node.js e tecnologias modernas do ecossistema JavaScript.',
+          current:     false,
+          description: 'Fundamentos de desenvolvimento web: HTML, CSS, JavaScript, Git e GitHub.',
         },
         {
-          degree:      'Cambridge English B2 First (FCE)',
+          degree:      'Cambridge Certificate in Advanced English (CAE) — C1',
           institution: 'Cambridge University Press & Assessment',
-          period:      '2021',
-          description: 'Certificação internacional de proficiência em inglês nível B2.',
+          period:      '2023',
+          current:     false,
+          description: 'Certificação internacional de proficiência em inglês nível C1.',
         },
       ],
     },
 
     achievements: {
-      sectionTitle: 'Conquistas & Atividades',
-      items: [
-        {
-          title:       'Olimpíadas Científicas',
-          description: 'Participação e premiação em olimpíadas científicas nacionais (Matemática, Física e Informática).',
-        },
-        {
-          title:       'Vôlei UnB',
-          description: 'Atleta e liderança na equipe de vôlei da Universidade de Brasília, conciliando esporte de alto rendimento com a graduação.',
-        },
-        {
-          title:       'Contribuições Open Source',
-          description: 'Contribuições para projetos open source e desenvolvimento de projetos pessoais disponíveis no GitHub.',
-        },
+      sectionTitle: 'Conquistas & Extracurricular',
+      awardsTitle: 'Prêmios',
+      leadershipTitle: 'Liderança & Extracurricular',
+      awards: [
+        { title: 'Medalha de Prata — OBA',           description: 'Olimpíada Brasileira de Astronomia, 2019.' },
+        { title: 'Menção Honrosa — Ciências',         description: 'Análise de dados no reflorestamento do Cerrado, Curitiba/PR, Nov 2019.' },
+        { title: 'Classificada — OBF 2ª fase',        description: '2018 e 2019.' },
+        { title: 'Classificada — OBMEP 2ª fase',      description: '2017, 2018 e 2019.' },
+      ],
+      leadership: [
+        { role: 'Presidente',         org: 'Seleção de Vôlei — UnB',      period: '2025' },
+        { role: 'Diretora Financeira', org: 'Seleção de Vôlei — UnB',      period: '2022 — 2025' },
+        { role: 'Diretora de Vôlei',   org: 'Atlética Maquinada',           period: '' },
+        { role: 'Jogadora Titular',    org: 'Time Feminino de Vôlei — UnB', period: '' },
+        { role: 'Membro',              org: 'EngNet Empresa Júnior',         period: '2024' },
+        { role: 'Monitora',            org: 'Física Experimental II — UnB',  period: '' },
       ],
     },
 
@@ -234,43 +240,49 @@ const content = {
 
     education: {
       sectionTitle: 'Education',
+      present: 'Present',
       items: [
         {
-          degree:      'Computer Engineering',
+          degree:      'Bachelor in Computer Engineering',
           institution: 'University of Brasília — UnB',
-          period:      '2022 — 2027',
-          description: '7th semester. Focus on software systems, algorithms, and infrastructure.',
+          period:      'Mar 2023 — Present (exp. 2027)',
+          current:     true,
+          description: 'Focus on software systems, algorithms, data structures, and infrastructure. 7th semester.',
         },
         {
-          degree:      'Full Stack Developer Training',
+          degree:      'Discovery Course',
           institution: 'Rocketseat',
           period:      '2023',
-          description: 'Web development track covering React, Node.js, and modern JavaScript ecosystem technologies.',
+          current:     false,
+          description: 'Web development fundamentals: HTML, CSS, JavaScript, Git and GitHub.',
         },
         {
-          degree:      'Cambridge English B2 First (FCE)',
+          degree:      'Cambridge Certificate in Advanced English (CAE) — C1',
           institution: 'Cambridge University Press & Assessment',
-          period:      '2021',
-          description: 'International English proficiency certification at the B2 level.',
+          period:      '2023',
+          current:     false,
+          description: 'International English proficiency certification at the C1 level.',
         },
       ],
     },
 
     achievements: {
-      sectionTitle: 'Achievements & Activities',
-      items: [
-        {
-          title:       'Science Olympiads',
-          description: 'Participation and awards in national science olympiads (Mathematics, Physics, and Informatics).',
-        },
-        {
-          title:       'UnB Volleyball',
-          description: 'Athlete and team leader in the University of Brasília volleyball team, balancing high-performance sport with academics.',
-        },
-        {
-          title:       'Open Source Contributions',
-          description: 'Contributions to open source projects and personal projects available on GitHub.',
-        },
+      sectionTitle: 'Achievements & Extracurricular',
+      awardsTitle: 'Awards',
+      leadershipTitle: 'Leadership & Extracurricular',
+      awards: [
+        { title: 'Silver Medal — OBA',              description: 'Brazilian Astronomy Olympiad, 2019.' },
+        { title: 'Honorable Mention — Science',     description: 'Data analysis on Cerrado reforestation, Curitiba/PR, Nov 2019.' },
+        { title: 'Qualifier — OBF 2nd round',       description: '2018 and 2019.' },
+        { title: 'Qualifier — OBMEP 2nd round',     description: '2017, 2018 and 2019.' },
+      ],
+      leadership: [
+        { role: 'President',           org: 'UnB Volleyball Team',          period: '2025' },
+        { role: 'Financial Director',  org: 'UnB Volleyball Team',          period: '2022 — 2025' },
+        { role: 'Volleyball Director', org: 'Atlética Maquinada',           period: '' },
+        { role: 'Starting Player',     org: "UnB Women's Volleyball Team",  period: '' },
+        { role: 'Member',              org: 'EngNet Junior Enterprise',      period: '2024' },
+        { role: 'Teaching Assistant',  org: 'Experimental Physics II — UnB', period: '' },
       ],
     },
 
