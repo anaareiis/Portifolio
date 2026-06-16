@@ -159,8 +159,10 @@ const content = {
     },
 
     footer: {
+      credit:    'Feito com ♥ por Ana Luísa Reis Nascente',
       builtWith: 'Desenvolvido com Next.js e Tailwind CSS',
       rights:    'Todos os direitos reservados.',
+      backToTop: 'Voltar ao topo',
     },
   },
 
@@ -322,8 +324,10 @@ const content = {
     },
 
     footer: {
+      credit:    'Made with ♥ by Ana Luísa Reis Nascente',
       builtWith: 'Built with Next.js and Tailwind CSS',
       rights:    'All rights reserved.',
+      backToTop: 'Back to top',
     },
   },
 } as const;
