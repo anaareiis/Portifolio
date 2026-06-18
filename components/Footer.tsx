@@ -1,6 +1,6 @@
 'use client';
 
-import { Mail, ArrowUp } from 'lucide-react';
+import { Mail, ArrowUp, FileDown } from 'lucide-react';
 import type { Language } from '@/lib/types';
 import { getContent } from '@/lib/content';
 
@@ -40,6 +40,14 @@ export default function Footer({ lang }: FooterProps) {
             className="text-slate-400 hover:text-sky-400 transition-colors"
           >
             <Mail size={18} />
+          </a>
+          <a
+            href={`/api/cv-ats?lang=${lang}`}
+            download={lang === 'pt' ? 'Ana-Luisa-Reis-Nascente-Curriculo-PT.pdf' : 'Ana-Luisa-Reis-Nascente-CV-EN.pdf'}
+            aria-label="CV"
+            className="text-slate-400 hover:text-sky-400 transition-colors"
+          >
+            <FileDown size={18} />
           </a>
           <a
             href="#hero"

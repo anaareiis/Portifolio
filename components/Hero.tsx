@@ -51,14 +51,32 @@ export default function Hero({ lang }: HeroProps) {
           >
             {hero.cta.projects}
           </a>
-          <a
-            href="/cv.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-6 py-3 rounded-full border border-sky-500 text-sky-400 hover:bg-sky-500/10 font-semibold text-sm transition-colors"
-          >
-            {hero.cta.cv}
-          </a>
+          
+          {/* CV Download Dropdown */}
+          <div className="relative group">
+            <button
+              className="px-6 py-3 rounded-full border border-sky-500 text-sky-400 hover:bg-sky-500/10 font-semibold text-sm transition-colors"
+            >
+              {hero.cta.cv}
+            </button>
+            <div className="absolute left-0 mt-0 w-48 bg-slate-900 border border-sky-500/50 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-10">
+              <a
+                href="/api/cv-ats?lang=pt"
+                download="Ana-Luisa-Reis-Nascente-Curriculo-PT.pdf"
+                className="block px-4 py-2 text-sm text-slate-300 hover:text-sky-400 hover:bg-sky-500/10 first:rounded-t-lg transition-colors"
+              >
+                📄 Português (PT)
+              </a>
+              <a
+                href="/api/cv-ats?lang=en"
+                download="Ana-Luisa-Reis-Nascente-CV-EN.pdf"
+                className="block px-4 py-2 text-sm text-slate-300 hover:text-sky-400 hover:bg-sky-500/10 last:rounded-b-lg transition-colors border-t border-sky-500/20"
+              >
+                📄 English (EN)
+              </a>
+            </div>
+          </div>
+
           <a
             href="#contato"
             className="px-6 py-3 rounded-full border border-slate-600 text-slate-300 hover:border-slate-400 hover:text-white font-semibold text-sm transition-colors"
@@ -81,7 +99,7 @@ export default function Hero({ lang }: HeroProps) {
             </svg>
           </a>
           <a
-            href="mailto:samurth00@gmail.com"
+            href="mailto:anarnascente@gmail.com"
             aria-label="E-mail"
             className="text-slate-400 hover:text-sky-400 transition-colors"
           >

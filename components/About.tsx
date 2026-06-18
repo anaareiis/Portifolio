@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import { MapPin, GraduationCap, Calendar, Languages } from 'lucide-react';
+import { MapPin, GraduationCap, Calendar, Languages, FileDown } from 'lucide-react';
 import type { Language } from '@/lib/types';
 import { getContent } from '@/lib/content';
 
@@ -12,7 +12,7 @@ interface AboutProps {
 const INFO_ICONS = [MapPin, GraduationCap, Calendar];
 
 export default function About({ lang }: AboutProps) {
-  const { about } = getContent(lang);
+  const { about, hero } = getContent(lang);
 
   return (
     <section id="sobre" className="py-24 px-4">
@@ -57,6 +57,15 @@ export default function About({ lang }: AboutProps) {
                 );
               })}
             </ul>
+
+            <a
+              href={`/api/cv-ats?lang=${lang}`}
+              download={lang === 'pt' ? 'Ana-Luisa-Reis-Nascente-Curriculo-PT.pdf' : 'Ana-Luisa-Reis-Nascente-CV-EN.pdf'}
+              className="w-full flex items-center justify-center gap-2 px-4 py-2.5 rounded-full border border-sky-500 text-sky-400 hover:bg-sky-500/10 font-semibold text-sm transition-colors"
+            >
+              <FileDown size={16} />
+              {hero.cta.cv}
+            </a>
           </div>
 
           {/* Coluna direita — bio + idiomas */}
