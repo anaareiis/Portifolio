@@ -1,5 +1,6 @@
 'use client';
 
+import { useState } from 'react';
 import Image from 'next/image';
 import { MapPin, GraduationCap, Calendar, Languages, FileDown } from 'lucide-react';
 import type { Language } from '@/lib/types';
@@ -13,6 +14,7 @@ const INFO_ICONS = [MapPin, GraduationCap, Calendar];
 
 export default function About({ lang }: AboutProps) {
   const { about, hero } = getContent(lang);
+  const [photoError, setPhotoError] = useState(false);
 
   return (
     <section id="sobre" className="py-24 px-4">
@@ -25,18 +27,22 @@ export default function About({ lang }: AboutProps) {
         <div className="grid md:grid-cols-[280px_1fr] gap-12 items-start">
           {/* Coluna esquerda — foto */}
           <div className="flex flex-col items-center gap-6">
-            <div className="relative w-52 h-52 rounded-full overflow-hidden ring-4 ring-sky-500/30 shrink-0">
-              <Image
-                src="/photo.jpg"
-                alt="Ana Luísa Reis Nascente"
-                fill
-                className="object-cover"
-                onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = 'none'; }}
-              />
-              {/* Placeholder com iniciais — visível quando não há foto */}
-              <div className="absolute inset-0 flex items-center justify-center bg-slate-800 text-sky-400 text-4xl font-bold select-none">
-                ALRN
-              </div>
+            <div className="relative w-52 h-52 rounded-full overflow-hidden ring-4 ring-sky-500/30 shrink-0 bg-slate-800">
+              {photoError ? (
+                /* Placeholder com iniciais — visível enquanto não há foto */
+                <div className="absolute inset-0 flex items-center justify-center text-sky-400 text-4xl font-bold select-none">
+                  ALRN
+                </div>
+              ) : (
+                <Image
+                  src="/photo.png"
+                  alt="Ana Luísa Reis Nascente"
+                  fill
+                  sizes="208px"
+                  className="object-cover"
+                  onError={() => setPhotoError(true)}
+                />
+              )}
             </div>
 
             {/* Cards de info */}
