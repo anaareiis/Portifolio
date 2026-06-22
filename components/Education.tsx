@@ -36,7 +36,7 @@ export default function Education({ lang }: EducationProps) {
                 </div>
                 <h3 className="text-sm font-semibold text-white leading-snug">{item.degree}</h3>
                 <p className="text-xs text-sky-400 font-medium">{item.institution}</p>
-                <p className="text-xs text-slate-500">{item.period}</p>
+                <p className="text-xs text-slate-400">{item.period}</p>
                 <p className="text-xs text-slate-400 leading-relaxed mt-1">{item.description}</p>
               </div>
             ))}
@@ -86,7 +86,7 @@ export default function Education({ lang }: EducationProps) {
                       <p className="text-xs text-sky-400 mt-0.5">{l.org}</p>
                     </div>
                     {l.period && (
-                      <span className="text-xs text-slate-500 shrink-0 mt-0.5">{l.period}</span>
+                      <span className="text-xs text-slate-400 shrink-0 mt-0.5">{l.period}</span>
                     )}
                   </li>
                 ))}

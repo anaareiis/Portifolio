@@ -1,5 +1,6 @@
 'use client';
 
+import { useState } from 'react';
 import { Mail, ArrowDown } from 'lucide-react';
 import type { Language } from '@/lib/types';
 import { getContent } from '@/lib/content';
@@ -10,6 +11,7 @@ interface HeroProps {
 
 export default function Hero({ lang }: HeroProps) {
   const { hero } = getContent(lang);
+  const [cvOpen, setCvOpen] = useState(false);
 
   return (
     <section
@@ -53,28 +55,35 @@ export default function Hero({ lang }: HeroProps) {
           </a>
           
           {/* CV Download Dropdown */}
-          <div className="relative group">
+          <div className="relative">
             <button
+              onClick={() => setCvOpen((o) => !o)}
               className="px-6 py-3 rounded-full border border-sky-500 text-sky-400 hover:bg-sky-500/10 font-semibold text-sm transition-colors"
+              aria-expanded={cvOpen}
             >
               {hero.cta.cv}
             </button>
-            <div className="absolute left-0 mt-0 w-48 bg-slate-900 border border-sky-500/50 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-10">
-              <a
-                href="/api/cv-ats?lang=pt"
-                download="Ana-Luisa-Reis-Nascente-Curriculo-PT.pdf"
-                className="block px-4 py-2 text-sm text-slate-300 hover:text-sky-400 hover:bg-sky-500/10 first:rounded-t-lg transition-colors"
+            {cvOpen && (
+              <div
+                onClick={() => setCvOpen(false)}
+                className="absolute left-0 right-0 sm:right-auto mt-2 w-full sm:w-48 bg-slate-900 border border-sky-500/50 rounded-lg shadow-lg z-10"
               >
-                📄 Português (PT)
-              </a>
-              <a
-                href="/api/cv-ats?lang=en"
-                download="Ana-Luisa-Reis-Nascente-CV-EN.pdf"
-                className="block px-4 py-2 text-sm text-slate-300 hover:text-sky-400 hover:bg-sky-500/10 last:rounded-b-lg transition-colors border-t border-sky-500/20"
-              >
-                📄 English (EN)
-              </a>
-            </div>
+                <a
+                  href="/api/cv-ats?lang=pt"
+                  download="Ana-Luisa-Reis-Nascente-Curriculo-PT.pdf"
+                  className="block px-4 py-2 text-sm text-slate-300 hover:text-sky-400 hover:bg-sky-500/10 first:rounded-t-lg transition-colors"
+                >
+                  📄 Português (PT)
+                </a>
+                <a
+                  href="/api/cv-ats?lang=en"
+                  download="Ana-Luisa-Reis-Nascente-CV-EN.pdf"
+                  className="block px-4 py-2 text-sm text-slate-300 hover:text-sky-400 hover:bg-sky-500/10 last:rounded-b-lg transition-colors border-t border-sky-500/20"
+                >
+                  📄 English (EN)
+                </a>
+              </div>
+            )}
           </div>
 
           <a

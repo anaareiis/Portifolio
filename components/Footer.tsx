@@ -17,7 +17,7 @@ export default function Footer({ lang }: FooterProps) {
       <div className="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
         <div className="text-center sm:text-left">
           <p className="text-sm text-slate-300">{footer.credit}</p>
-          <p className="text-xs text-slate-500 mt-1">
+          <p className="text-xs text-slate-400 mt-1">
             {footer.builtWith} · © {year} · {footer.rights}
           </p>
         </div>

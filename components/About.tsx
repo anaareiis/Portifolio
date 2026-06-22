@@ -56,7 +56,7 @@ export default function About({ lang }: AboutProps) {
                   >
                     <Icon size={16} className="text-sky-400 shrink-0" />
                     <div>
-                      <p className="text-xs text-slate-500 leading-none mb-0.5">{card.label}</p>
+                      <p className="text-xs text-slate-400 leading-none mb-0.5">{card.label}</p>
                       <p className="text-sm text-slate-200 font-medium">{card.value}</p>
                     </div>
                   </li>

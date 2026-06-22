@@ -66,7 +66,7 @@ export default function Projects({ lang, repos }: ProjectsProps) {
                   {repo.description || projects.noDescription}
                 </p>
 
-                <div className="flex items-center gap-4 text-xs text-slate-500">
+                <div className="flex items-center gap-4 text-xs text-slate-400">
                   {repo.language && (
                     <span className="flex items-center gap-1.5">
                       <span

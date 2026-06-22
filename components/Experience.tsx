@@ -42,7 +42,7 @@ export default function Experience({ lang }: ExperienceProps) {
                     )}
                   </div>
                   <p className="text-sm text-sky-400 font-medium mb-1">{item.company}</p>
-                  <p className="text-xs text-slate-500 mb-3">{item.period}</p>
+                  <p className="text-xs text-slate-400 mb-3">{item.period}</p>
                   <p className="text-sm text-slate-400 leading-relaxed">{item.description}</p>
                 </div>
               </li>

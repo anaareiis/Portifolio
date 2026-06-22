@@ -42,12 +42,12 @@ export default function Navbar({ lang, onToggleLang }: NavbarProps) {
         </a>
 
         {/* Desktop links */}
-        <ul className="hidden md:flex items-center gap-6">
+        <ul className="hidden md:flex items-center gap-3 lg:gap-6">
           {navbar.links.map((link) => (
             <li key={link.href}>
               <a
                 href={link.href}
-                className="text-sm text-slate-300 hover:text-sky-400 transition-colors"
+                className="text-xs lg:text-sm text-slate-300 hover:text-sky-400 transition-colors whitespace-nowrap"
               >
                 {link.label}
               </a>
