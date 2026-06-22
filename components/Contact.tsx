@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, FormEvent } from 'react';
-import { Mail, MapPin, Send } from 'lucide-react';
+import { Mail, MapPin, Phone, Send } from 'lucide-react';
 import type { Language } from '@/lib/types';
 import { getContent } from '@/lib/content';
 
@@ -113,6 +113,16 @@ export default function Contact({ lang }: ContactProps) {
             >
               <Mail size={16} className="text-sky-400 shrink-0" />
               <span className="text-sm text-slate-300 break-all">{contact.links.email}</span>
+            </a>
+
+            <a
+              href={`https://wa.me/55${contact.links.phone.replace(/\D/g, '')}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 bg-slate-800/50 border border-slate-700/50 rounded-lg px-4 py-3 hover:border-sky-500/40 transition-colors"
+            >
+              <Phone size={16} className="text-sky-400 shrink-0" />
+              <span className="text-sm text-slate-300">{contact.links.phone}</span>
             </a>
 
             <a

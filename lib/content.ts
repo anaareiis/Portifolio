@@ -154,6 +154,7 @@ const content = {
       },
       links: {
         email:    'anarnascente@gmail.com',
+        phone:    '(61) 98140-2266',
         github:   'github.com/anaareiis',
         location: 'Brasília, DF — Brasil',
       },
@@ -320,6 +321,7 @@ const content = {
       },
       links: {
         email:    'anarnascente@gmail.com',
+        phone:    '(61) 98140-2266',
         github:   'github.com/anaareiis',
         location: 'Brasília, DF — Brazil',
       },
