@@ -37,3 +37,5 @@ npm run start
 ## Deploy
 
 Hospedado na [Vercel](https://vercel.com), com deploy automático a cada push na branch `main`.
+
+🔗 [portifolio-delta-rust.vercel.app](https://portifolio-delta-rust.vercel.app/)
