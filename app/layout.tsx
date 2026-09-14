@@ -7,7 +7,10 @@ const geist = Geist({
   variable: "--font-geist",
 });
 
+const siteUrl = "https://portifolio-delta-rust.vercel.app";
+
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: "Ana Luísa Reis Nascente — Portfólio",
   description:
     "Portfólio de Ana Luísa Reis Nascente, estudante de Engenharia de Computação na UnB. Experiência com JavaScript, React, Node.js e Python.",
@@ -26,7 +29,25 @@ export const metadata: Metadata = {
     title: "Ana Luísa Reis Nascente — Portfólio",
     description:
       "Estudante de Engenharia de Computação na UnB com experiência em JavaScript, React, Node.js e Python.",
+    url: siteUrl,
+    siteName: "Ana Luísa Reis Nascente — Portfólio",
+    locale: "pt_BR",
     type: "website",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Ana Luísa Reis Nascente — Engenheira de Computação",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Ana Luísa Reis Nascente — Portfólio",
+    description:
+      "Estudante de Engenharia de Computação na UnB com experiência em JavaScript, React, Node.js e Python.",
+    images: ["/og-image.png"],
   },
 };
 
