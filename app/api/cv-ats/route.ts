@@ -13,7 +13,9 @@ interface CVContent {
     programming: string;
     frontend: string;
     backend: string;
-    databases: string;
+    ai: string;
+    data: string;
+    qa: string;
     tools: string;
     methodologies: string;
   };
@@ -45,14 +47,16 @@ const contentPT: CVContent = {
   github: 'github.com/anaareiis',
   linkedin: 'linkedin.com/in/ana-luisa-nascente',
   summary:
-    'Estudante de Engenharia de Computação na Universidade de Brasília (UnB) com experiência em desenvolvimento full-stack, engenharia de software e educação técnica. Proficiente em Python, JavaScript, TypeScript, React, Node.js e diversas tecnologias de banco de dados. Fortes habilidades em resolução de problemas com capacidade demonstrada em design de algoritmos, arquitetura de sistemas e liderança de projetos.',
+    'Estudante de Engenharia de Computação na Universidade de Brasília (UnB) com atuação em Full Stack, IA Aplicada e Dados, com QA/Qualidade de Software atravessando essas áreas. Proficiente em Python, JavaScript, TypeScript, React, Node.js, integração com APIs de IA (OpenAI, Anthropic) e testes automatizados de frontend, backend e pipelines de dados. Fortes habilidades em resolução de problemas com capacidade demonstrada em design de algoritmos, arquitetura de sistemas e liderança de projetos.',
   skills: {
     programming: 'Python, JavaScript, TypeScript, C, C++, Java, Ruby',
     frontend: 'React.js, React Native, Next.js, HTML5, CSS3, Tailwind CSS',
     backend: 'Node.js, Express, NestJS, Spring Boot',
-    databases: 'PostgreSQL, SQL, Prisma ORM',
-    tools: 'Git, GitHub, Docker, Figma, Linux, Power BI',
-    methodologies: 'Scrum, Kanban, Desenvolvimento Ágil, Test-Driven Development',
+    ai: 'OpenAI API, Anthropic API (Claude), LLMs, Prompt Engineering',
+    data: 'SQL, PostgreSQL, Pandas, Power BI, Pipelines & ETL, Prisma ORM',
+    qa: 'TDD (GTest, Valgrind), Jest, Cypress, Playwright, Selenium, Postman',
+    tools: 'Git, GitHub, Docker, Figma, Linux',
+    methodologies: 'Scrum, Kanban, Desenvolvimento Ágil',
   },
   experience: [
     {
@@ -124,14 +128,16 @@ const contentEN: CVContent = {
   github: 'github.com/anaareiis',
   linkedin: 'linkedin.com/in/ana-luisa-nascente',
   summary:
-    'Computer Engineering student at University of Brasília (UnB) with hands-on experience in full-stack development, software engineering, and technical education. Proficient in Python, JavaScript, TypeScript, React, Node.js, and various database technologies. Strong problem-solving skills with demonstrated ability in algorithm design, system architecture, and project leadership.',
+    'Computer Engineering student at University of Brasília (UnB) working across Full Stack, Applied AI, and Data, with QA/Software Quality running through all of them. Proficient in Python, JavaScript, TypeScript, React, Node.js, integrating AI APIs (OpenAI, Anthropic), and automated testing of frontend, backend, and data pipelines. Strong problem-solving skills with demonstrated ability in algorithm design, system architecture, and project leadership.',
   skills: {
     programming: 'Python, JavaScript, TypeScript, C, C++, Java, Ruby',
     frontend: 'React.js, React Native, Next.js, HTML5, CSS3, Tailwind CSS',
     backend: 'Node.js, Express, NestJS, Spring Boot',
-    databases: 'PostgreSQL, SQL, Prisma ORM',
-    tools: 'Git, GitHub, Docker, Figma, Linux, Power BI',
-    methodologies: 'Scrum, Kanban, Agile Development, Test-Driven Development',
+    ai: 'OpenAI API, Anthropic API (Claude), LLMs, Prompt Engineering',
+    data: 'SQL, PostgreSQL, Pandas, Power BI, Pipelines & ETL, Prisma ORM',
+    qa: 'TDD (GTest, Valgrind), Jest, Cypress, Playwright, Selenium, Postman',
+    tools: 'Git, GitHub, Docker, Figma, Linux',
+    methodologies: 'Scrum, Kanban, Agile Development',
   },
   experience: [
     {
@@ -301,7 +307,19 @@ function generatePDF(content: CVContent, lang: string): Promise<Buffer> {
         9
       );
       currentY = addWrappedText(
-        `${lang === 'pt' ? 'Bancos de Dados' : 'Databases'}: ${content.skills.databases}`,
+        `${lang === 'pt' ? 'IA Aplicada' : 'Applied AI'}: ${content.skills.ai}`,
+        leftMargin,
+        currentY,
+        9
+      );
+      currentY = addWrappedText(
+        `${lang === 'pt' ? 'Dados' : 'Data'}: ${content.skills.data}`,
+        leftMargin,
+        currentY,
+        9
+      );
+      currentY = addWrappedText(
+        `${lang === 'pt' ? 'QA / Qualidade de Software' : 'QA / Software Quality'}: ${content.skills.qa}`,
         leftMargin,
         currentY,
         9
