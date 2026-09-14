@@ -39,6 +39,7 @@ export const metadata: Metadata = {
         width: 1200,
         height: 630,
         alt: "Ana Luísa Reis Nascente — Engenheira de Computação",
+        type: "image/png",
       },
     ],
   },
