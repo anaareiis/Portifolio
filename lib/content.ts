@@ -16,8 +16,8 @@ const content = {
     hero: {
       greeting:  'Olá, eu sou',
       name:      'Ana Luísa Reis Nascente',
-      title:     'Engenheira de Software — Full Stack ↔ IA Aplicada ↔ Dados',
-      subtitle:  'Estudante de Engenharia de Computação na UnB. Desenvolvo produtos de ponta a ponta unindo Full Stack, IA Aplicada e Dados — com QA atravessando cada etapa, dos testes de API e E2E à validação de modelos e integridade de pipelines.',
+      title:     'Engenheira de Computação',
+      subtitle:  'Estudante de Engenharia de Computação na UnB, apaixonada por desenvolvimento full-stack e educação em tecnologia.',
       cta: {
         projects: 'Ver Projetos',
         cv:       'Baixar CV',
@@ -29,7 +29,7 @@ const content = {
     about: {
       sectionTitle: 'Sobre Mim',
       bio: [
-        'Sou estudante de Engenharia de Computação na Universidade de Brasília (UnB), atualmente no 7º semestre com previsão de conclusão em 2027. Minha atuação transita entre Full Stack, IA Aplicada e Dados, sempre com QA/Qualidade de Software atravessando essas áreas — de testes automatizados de frontend, backend e APIs à validação de aplicações com IA e à garantia de qualidade em pipelines de dados.',
+        'Sou estudante de Engenharia de Computação na Universidade de Brasília (UnB), atualmente no 7º semestre com previsão de conclusão em 2027. Tenho experiência em desenvolvimento full-stack e venho me aprofundando em IA Aplicada, Dados e QA/Qualidade de Software, áreas nas quais busco me especializar.',
         'Além do desenvolvimento, tenho paixão por ensino e compartilhamento de conhecimento. Atuei como professora e monitora, contribuindo para a formação de outros estudantes em programação e tecnologia.',
       ],
       infoCards: [
@@ -196,8 +196,8 @@ const content = {
     hero: {
       greeting:  "Hi, I'm",
       name:      'Ana Luísa Reis Nascente',
-      title:     'Software Engineer — Full Stack ↔ Applied AI ↔ Data',
-      subtitle:  'Computer Engineering student at UnB. I build end-to-end products spanning Full Stack, Applied AI, and Data — with QA running through every layer, from API and E2E testing to model validation and pipeline integrity.',
+      title:     'Software Engineer',
+      subtitle:  'Computer Engineering student at UnB, passionate about full-stack development and tech education.',
       cta: {
         projects: 'View Projects',
         cv:       'Download CV',
@@ -209,7 +209,7 @@ const content = {
     about: {
       sectionTitle: 'About Me',
       bio: [
-        "I'm a Computer Engineering student at the University of Brasília (UnB), currently in my 7th semester with an expected graduation in 2027. My work spans Full Stack, Applied AI, and Data, with QA/Software Quality running through all of them — from automated testing of frontend, backend, and APIs to validating AI-powered applications and ensuring data pipeline integrity.",
+        "I'm a Computer Engineering student at the University of Brasília (UnB), currently in my 7th semester with an expected graduation in 2027. I have experience in full-stack development and I'm currently deepening my knowledge in Applied AI, Data, and QA/Software Quality, areas I'm aiming to specialize in.",
         'Beyond development, I have a passion for teaching and knowledge sharing. I have worked as a teacher and teaching assistant, contributing to the education of other students in programming and technology.',
       ],
       infoCards: [

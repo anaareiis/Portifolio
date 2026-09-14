@@ -47,7 +47,7 @@ const contentPT: CVContent = {
   github: 'github.com/anaareiis',
   linkedin: 'linkedin.com/in/ana-luisa-nascente',
   summary:
-    'Estudante de Engenharia de Computação na Universidade de Brasília (UnB) com atuação em Full Stack, IA Aplicada e Dados, com QA/Qualidade de Software atravessando essas áreas. Proficiente em Python, JavaScript, TypeScript, React, Node.js, integração com APIs de IA (OpenAI, Anthropic) e testes automatizados de frontend, backend e pipelines de dados. Fortes habilidades em resolução de problemas com capacidade demonstrada em design de algoritmos, arquitetura de sistemas e liderança de projetos.',
+    'Estudante de Engenharia de Computação na Universidade de Brasília (UnB) com experiência em desenvolvimento full-stack e aprofundamento em IA Aplicada, Dados e QA/Qualidade de Software, áreas nas quais busca se especializar. Proficiente em Python, JavaScript, TypeScript, React, Node.js, integração com APIs de IA (OpenAI, Anthropic) e testes automatizados de frontend, backend e pipelines de dados. Fortes habilidades em resolução de problemas com capacidade demonstrada em design de algoritmos, arquitetura de sistemas e liderança de projetos.',
   skills: {
     programming: 'Python, JavaScript, TypeScript, C, C++, Java, Ruby',
     frontend: 'React.js, React Native, Next.js, HTML5, CSS3, Tailwind CSS',
@@ -128,7 +128,7 @@ const contentEN: CVContent = {
   github: 'github.com/anaareiis',
   linkedin: 'linkedin.com/in/ana-luisa-nascente',
   summary:
-    'Computer Engineering student at University of Brasília (UnB) working across Full Stack, Applied AI, and Data, with QA/Software Quality running through all of them. Proficient in Python, JavaScript, TypeScript, React, Node.js, integrating AI APIs (OpenAI, Anthropic), and automated testing of frontend, backend, and data pipelines. Strong problem-solving skills with demonstrated ability in algorithm design, system architecture, and project leadership.',
+    'Computer Engineering student at University of Brasília (UnB) with hands-on experience in full-stack development and a growing focus on Applied AI, Data, and QA/Software Quality, areas she is aiming to specialize in. Proficient in Python, JavaScript, TypeScript, React, Node.js, integrating AI APIs (OpenAI, Anthropic), and automated testing of frontend, backend, and data pipelines. Strong problem-solving skills with demonstrated ability in algorithm design, system architecture, and project leadership.',
   skills: {
     programming: 'Python, JavaScript, TypeScript, C, C++, Java, Ruby',
     frontend: 'React.js, React Native, Next.js, HTML5, CSS3, Tailwind CSS',
