@@ -1,6 +1,6 @@
 'use client';
 
-import { Code2, BrainCircuit, Database, ShieldCheck } from 'lucide-react';
+import { Code2, BrainCircuit, Database, ShieldCheck, Server } from 'lucide-react';
 import type { Language } from '@/lib/types';
 import { getContent } from '@/lib/content';
 
@@ -10,6 +10,7 @@ const CATEGORY_STYLES = [
   { icon: BrainCircuit, accent: 'text-fuchsia-400',  ring: 'hover:border-fuchsia-500/50' },
   { icon: Database,     accent: 'text-emerald-400',  ring: 'hover:border-emerald-500/50' },
   { icon: ShieldCheck,  accent: 'text-amber-400',    ring: 'hover:border-amber-500/50' },
+  { icon: Server,       accent: 'text-violet-400',   ring: 'hover:border-violet-500/50' },
 ];
 
 interface SkillsProps {

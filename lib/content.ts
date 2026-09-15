@@ -52,22 +52,35 @@ const content = {
       categories: [
         {
           title: 'Full Stack',
-          items: ['JavaScript', 'React JS / React Native', 'Node.js', 'Python', 'HTML', 'CSS', 'Java', 'C++', 'C', 'Ruby'],
+          items: [
+            'JavaScript', 'TypeScript', 'React JS / React Native', 'Next.js', 'Node.js', 'NestJS',
+            'Python', 'REST APIs', 'PostgreSQL', 'Prisma', 'HTML', 'CSS', 'Java', 'C++', 'C', 'Ruby',
+          ],
         },
         {
           title: 'IA Aplicada',
-          items: ['OpenAI API', 'Anthropic API (Claude)', 'LLMs', 'Prompt Engineering'],
+          items: [
+            'OpenAI API', 'Anthropic API (Claude)', 'LLMs', 'Prompt Engineering',
+            'Structured Outputs', 'Tool Calling', 'RAG', 'Embeddings', 'Vector DBs', 'AI Evaluation',
+          ],
         },
         {
           title: 'Dados',
-          items: ['SQL', 'Pandas', 'Power BI', 'Pipelines & ETL'],
+          items: ['SQL', 'PostgreSQL', 'Pandas', 'Power BI', 'Pipelines & ETL', 'APIs', 'Data Modeling'],
         },
         {
           title: 'QA / Qualidade de Software',
-          items: ['TDD (GTest, Valgrind)', 'Jest', 'Cypress', 'Playwright', 'Selenium', 'Postman'],
+          items: [
+            'TDD (GTest, Valgrind)', 'Jest', 'Pytest', 'Cypress', 'Playwright', 'Selenium',
+            'Postman', 'Testes de Integração', 'E2E', 'CI',
+          ],
+        },
+        {
+          title: 'Engenharia / DevOps',
+          items: ['Git & GitHub', 'Linux', 'Docker', 'GitHub Actions', 'CI/CD', 'Cloud (Vercel)'],
         },
       ],
-      other: ['Git & GitHub', 'Figma', 'LaTeX', 'Linux', 'Metodologias Ágeis', 'Microsoft Office'],
+      other: ['Figma', 'LaTeX', 'Metodologias Ágeis', 'Microsoft Office'],
     },
 
     experience: {
@@ -232,22 +245,35 @@ const content = {
       categories: [
         {
           title: 'Full Stack',
-          items: ['JavaScript', 'React JS / React Native', 'Node.js', 'Python', 'HTML', 'CSS', 'Java', 'C++', 'C', 'Ruby'],
+          items: [
+            'JavaScript', 'TypeScript', 'React JS / React Native', 'Next.js', 'Node.js', 'NestJS',
+            'Python', 'REST APIs', 'PostgreSQL', 'Prisma', 'HTML', 'CSS', 'Java', 'C++', 'C', 'Ruby',
+          ],
         },
         {
           title: 'Applied AI',
-          items: ['OpenAI API', 'Anthropic API (Claude)', 'LLMs', 'Prompt Engineering'],
+          items: [
+            'OpenAI API', 'Anthropic API (Claude)', 'LLMs', 'Prompt Engineering',
+            'Structured Outputs', 'Tool Calling', 'RAG', 'Embeddings', 'Vector DBs', 'AI Evaluation',
+          ],
         },
         {
           title: 'Data',
-          items: ['SQL', 'Pandas', 'Power BI', 'Pipelines & ETL'],
+          items: ['SQL', 'PostgreSQL', 'Pandas', 'Power BI', 'Pipelines & ETL', 'APIs', 'Data Modeling'],
         },
         {
           title: 'QA / Software Quality',
-          items: ['TDD (GTest, Valgrind)', 'Jest', 'Cypress', 'Playwright', 'Selenium', 'Postman'],
+          items: [
+            'TDD (GTest, Valgrind)', 'Jest', 'Pytest', 'Cypress', 'Playwright', 'Selenium',
+            'Postman', 'Integration Tests', 'E2E', 'CI',
+          ],
+        },
+        {
+          title: 'Engineering / DevOps',
+          items: ['Git & GitHub', 'Linux', 'Docker', 'GitHub Actions', 'CI/CD', 'Cloud (Vercel)'],
         },
       ],
-      other: ['Git & GitHub', 'Figma', 'LaTeX', 'Linux', 'Agile Methodologies', 'Microsoft Office'],
+      other: ['Figma', 'LaTeX', 'Agile Methodologies', 'Microsoft Office'],
     },
 
     experience: {

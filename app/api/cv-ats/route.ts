@@ -16,6 +16,7 @@ interface CVContent {
     ai: string;
     data: string;
     qa: string;
+    devops: string;
     tools: string;
     methodologies: string;
   };
@@ -51,11 +52,12 @@ const contentPT: CVContent = {
   skills: {
     programming: 'Python, JavaScript, TypeScript, C, C++, Java, Ruby',
     frontend: 'React.js, React Native, Next.js, HTML5, CSS3, Tailwind CSS',
-    backend: 'Node.js, Express, NestJS, Spring Boot',
-    ai: 'OpenAI API, Anthropic API (Claude), LLMs, Prompt Engineering',
-    data: 'SQL, PostgreSQL, Pandas, Power BI, Pipelines & ETL, Prisma ORM',
-    qa: 'TDD (GTest, Valgrind), Jest, Cypress, Playwright, Selenium, Postman',
-    tools: 'Git, GitHub, Docker, Figma, Linux',
+    backend: 'Node.js, NestJS, REST APIs',
+    ai: 'OpenAI API, Anthropic API (Claude), LLMs, Prompt Engineering, RAG, Embeddings, Vector DBs, Tool Calling, Structured Outputs, AI Evaluation',
+    data: 'SQL, PostgreSQL, Pandas, Power BI, Pipelines & ETL, Data Modeling, Prisma ORM',
+    qa: 'TDD (GTest, Valgrind), Jest, Pytest, Cypress, Playwright, Selenium, Postman, Testes de Integração, E2E, CI',
+    devops: 'Docker, GitHub Actions, CI/CD, Cloud (Vercel)',
+    tools: 'Git, GitHub, Figma, Linux',
     methodologies: 'Scrum, Kanban, Desenvolvimento Ágil',
   },
   experience: [
@@ -132,11 +134,12 @@ const contentEN: CVContent = {
   skills: {
     programming: 'Python, JavaScript, TypeScript, C, C++, Java, Ruby',
     frontend: 'React.js, React Native, Next.js, HTML5, CSS3, Tailwind CSS',
-    backend: 'Node.js, Express, NestJS, Spring Boot',
-    ai: 'OpenAI API, Anthropic API (Claude), LLMs, Prompt Engineering',
-    data: 'SQL, PostgreSQL, Pandas, Power BI, Pipelines & ETL, Prisma ORM',
-    qa: 'TDD (GTest, Valgrind), Jest, Cypress, Playwright, Selenium, Postman',
-    tools: 'Git, GitHub, Docker, Figma, Linux',
+    backend: 'Node.js, NestJS, REST APIs',
+    ai: 'OpenAI API, Anthropic API (Claude), LLMs, Prompt Engineering, RAG, Embeddings, Vector DBs, Tool Calling, Structured Outputs, AI Evaluation',
+    data: 'SQL, PostgreSQL, Pandas, Power BI, Pipelines & ETL, Data Modeling, Prisma ORM',
+    qa: 'TDD (GTest, Valgrind), Jest, Pytest, Cypress, Playwright, Selenium, Postman, Integration Tests, E2E, CI',
+    devops: 'Docker, GitHub Actions, CI/CD, Cloud (Vercel)',
+    tools: 'Git, GitHub, Figma, Linux',
     methodologies: 'Scrum, Kanban, Agile Development',
   },
   experience: [
@@ -320,6 +323,12 @@ function generatePDF(content: CVContent, lang: string): Promise<Buffer> {
       );
       currentY = addWrappedText(
         `${lang === 'pt' ? 'QA / Qualidade de Software' : 'QA / Software Quality'}: ${content.skills.qa}`,
+        leftMargin,
+        currentY,
+        9
+      );
+      currentY = addWrappedText(
+        `${lang === 'pt' ? 'Engenharia / DevOps' : 'Engineering / DevOps'}: ${content.skills.devops}`,
         leftMargin,
         currentY,
         9
